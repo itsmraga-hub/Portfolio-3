@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 2.8em;
+    padding: 0 1em 1em 1em;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-container__logo {
+    color: #28352f;
+    font-weight: bold;
+}
+
+.header-container__nav {
+    padding: 0.5em 1em;
+}
+
+.header-container__nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.header-container__nav-list-item {
+    display: none;
+}
+
+.header-container__nav-list-item-burger .burger-menu {
+    width: 1.4em;
+    margin: 0.25em;
+    background-color: #acb7c3;
+    height: 4px;
+    border: 2px solid #acb7c3;
+}
