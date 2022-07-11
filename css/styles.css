@@ -52,3 +52,42 @@ header {
     height: 4px;
     border: 2px solid #acb7c3;
 }
+
+.hero-container {
+    background-image: url(../Templates/header-illsutration-mobile.svg);
+    background-size: cover;
+    padding: 6em 4em 0 4em;
+    text-align: center;
+}
+
+.hero-container__heading {
+    font-size: 3em;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.hero-container__work-title {
+    font-size: 4.5em;
+    font-weight: bold;
+    color: greenyellow;
+    padding-bottom: 5rem;
+}
+
+.hero-container__intro {
+    font-size: 2.1em;
+    padding-bottom: 4rem;
+}
+
+.hero-container__social-icons-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.hero-container__social-icons-list-item {
+    padding: 0 2em 0 0;
+}
+
+.hero-container__social-icons-list-item svg {
+
+}
