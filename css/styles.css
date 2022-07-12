@@ -18,7 +18,7 @@ header {
     font-size: 2em;
     font-weight: 600;
     line-height: 2.8em;
-    padding: 0 1em 1em 1em;
+    padding: 1em 0 1em 1em;
 }
 
 .header-container {
@@ -61,21 +61,38 @@ header {
 }
 
 .hero-container__heading {
-    font-size: 3em;
+    padding: 0;
+}
+
+.hero-container__heading .heading {
+    font-size: 4.5em;
     font-weight: bold;
-    padding-bottom: 1rem;
+    line-height: 1.3em;
+    color: #172b4d;
+    flex-grow: 0;
 }
 
 .hero-container__work-title {
+    padding-bottom: 2.4em;
+}
+
+.hero-container__work-title .work-title {
     font-size: 4.5em;
     font-weight: bold;
-    color: greenyellow;
-    padding-bottom: 5rem;
+    line-height: 1.2em;
+    color: #36b376;
 }
 
 .hero-container__intro {
-    font-size: 2.1em;
-    padding-bottom: 4rem;
+    padding-bottom: 4em;
+}
+
+.hero-container__intro .intro {
+    text-align: center;
+    font-size: 2em;
+    line-height: 2.8rem;
+    color: #172b4d;
+    font-weight: 400;
 }
 
 .hero-container__social-icons-list {
@@ -88,6 +105,6 @@ header {
     padding: 0 2em 0 0;
 }
 
-.hero-container__social-icons-list-item svg {
-
+.hero-container__social-icons-list-item path {
+    background-color: #505f79;
 }
