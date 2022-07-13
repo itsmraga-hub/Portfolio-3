@@ -16,18 +16,14 @@ body {
   width: 100%;
 }
 
-header {
-  width: 100%;
-  font-size: 2em;
-  font-weight: 600;
-  line-height: 2.8em;
-  padding: 0 1em;
-}
-
 .header-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 2.8em;
+  padding: 0 1em;
 }
 
 .header-container__logo {
@@ -66,21 +62,15 @@ header {
 
 .hero-container__heading {
   padding: 0;
-}
-
-.hero-container__heading .heading {
   font-size: 4em;
   font-weight: bold;
   line-height: 1.3em;
   color: #172b4d;
   flex-grow: 0;
-}
+}  
 
 .hero-container__work-title {
   padding-bottom: 2.4em;
-}
-
-.hero-container__work-title .work-title {
   font-size: 4em;
   font-weight: bold;
   line-height: 1.2em;
@@ -89,9 +79,6 @@ header {
 
 .hero-container__intro {
   padding-bottom: 4em;
-}
-
-.hero-container__intro .intro {
   text-align: center;
   font-size: 2em;
   line-height: 2.8rem;
