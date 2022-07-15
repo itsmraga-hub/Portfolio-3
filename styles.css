@@ -53,11 +53,16 @@ body {
 }
 
 .hero-container {
+  width: 100%;
   background-image: url(../Templates/header-illsutration-mobile.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 6em 4em 0 4em;
+  padding: 6em 2.4em 0 2.4em;
   text-align: center;
+}
+
+.hero-container__details {
+  width: 100%;
 }
 
 .hero-container__heading {
@@ -70,7 +75,7 @@ body {
 }  
 
 .hero-container__work-title {
-  padding-bottom: 2.4em;
+  padding-bottom: 3.6rem;
   font-size: 4em;
   font-weight: bold;
   line-height: 1.2em;
@@ -78,7 +83,7 @@ body {
 }
 
 .hero-container__intro {
-  padding-bottom: 4em;
+  padding-bottom: 2em;
   text-align: center;
   font-size: 2em;
   line-height: 2.8rem;
@@ -90,6 +95,7 @@ body {
   display: flex;
   list-style: none;
   justify-content: center;
+  padding-bottom: 11em;
 }
 
 .hero-container__social-icons-list-item {
@@ -98,4 +104,52 @@ body {
 
 .hero-container__social-icons-list-item path {
   background-color: #505f79;
+}
+
+.work-section {
+  padding: 3em 2.2rem 0 2.6rem;
+  text-align: center;
+}
+
+.work-section__heading {
+  font-size: 4em;
+  font-weight: 700;
+  line-height: 52px;
+  color: #172b4d;
+  border-bottom: 1px solid #36b37e;
+  border-radius: 0.2rem;
+  border-width: 0.4rem;
+  
+  padding-bottom: 2rem;
+}
+
+.work-section__project-card {
+  padding-top: 4em;
+}
+
+.work-section__project-card-title {
+  padding: 0.5em 0;
+  font-size: 2.4rem;
+  color: #3a4a42;
+  line-height: 3.2rem;
+}
+
+.work-section__project-card-languages-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1rem;
+  
+}
+
+.work-section__project-card-language {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+  color: #3a4a42;
+  letter-spacing: 0.03em;
+  border: 1px solid #ebf0ee;
+  border-radius: 0.4rem;
+  padding: 1em 0.8em;
+  background-color: #c1c7d0;
 }
