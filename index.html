@@ -10,16 +10,24 @@
   <body>
     <header class="header-container">
       <p class="header-container__logo">Will<span>I</span>am Raga</p>
-      <nav class="header-container__nav" id="nav">
-        <ul class="header-container__nav-list">
+      <div
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        class="header-container__nav-list-item-burger burger mobile-nav-toggle"
+      >
+        <div class="burger-menu rotate"></div>
+        <div class="burger-menu dissappear"></div>
+        <div class="burger-menu rotate1"></div>
+      </div>
+      <nav class="header-container__nav" id="primary-nav">
+        <ul
+          data-visible="false"
+          id="primary-navigation"
+          class="header-container__nav-list primary-navigation nav-links"
+        >
           <li class="header-container__nav-list-item">Portfolio</li>
           <li class="header-container__nav-list-item">About</li>
           <li class="header-container__nav-list-item">Contact</li>
-          <li class="header-container__nav-list-item-burger">
-            <div class="burger-menu"></div>
-            <div class="burger-menu"></div>
-            <div class="burger-menu"></div>
-          </li>
         </ul>
       </nav>
     </header>
@@ -279,15 +287,20 @@
             Multi-Post Stories Gain+Glory
           </h3>
           <ul class="work-section__project-card-languages-list">
-            <li class="work-section__project-card-language">Ruby on rails</li>
-            <li class="work-section__project-card-language">css</li>
-            <li class="work-section__project-card-language">Javascript</li>
-            <li class="work-section__project-card-language">html</li>
+            <li class="work-section__project-card-language nav-link">
+              Ruby on rails
+            </li>
+            <li class="work-section__project-card-language nav-link">css</li>
+            <li class="work-section__project-card-language nav-link">
+              Javascript
+            </li>
+            <li class="work-section__project-card-language nav-link">html</li>
           </ul>
           <a href="" class="work-section__btn">See Project</a>
         </div>
       </section>
     </main>
     <footer></footer>
+    <script src="app.js"></script>
   </body>
 </html>
