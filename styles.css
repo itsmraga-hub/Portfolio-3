@@ -127,11 +127,14 @@ svg g {
 }
 
 .work-section__project-card {
-  padding-top: 4em;
+  padding-bottom: 4em;
+  margin-top: 2.4em;
+  border: 2px solid #d0d9d4;
+  border-radius: 8px;
 }
 
 .work-section__project-card-title {
-  padding: 0.5em 0;
+  padding: 0.5em 0 0 0;
   font-size: 2.4rem;
   color: #3a4a42;
   line-height: 3.2rem;
@@ -142,6 +145,7 @@ svg g {
   display: flex;
   justify-content: space-between;
   padding: 1em 1rem;
+  margin-bottom: 3em;
 }
 
 .work-section__project-card-language {
@@ -153,5 +157,17 @@ svg g {
   border: 1px solid #ebf0ee;
   border-radius: 0.4rem;
   padding: 1em 0.8em;
-  background-color: #c1c7d0;
+  /* background-color: #c1c7d0; */
+  background-color: #ebf0ee;
+}
+
+.work-section__btn {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: #36b376;
+  /* border: 1px solid #ebf0ee; */
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 1em 1em;
 }
