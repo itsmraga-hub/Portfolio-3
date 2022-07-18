@@ -67,9 +67,10 @@ body {
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 }
 
@@ -178,7 +179,7 @@ body {
   border: 1px solid #3a4a42;
   border-radius: 50%;
   width: 60px;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   padding: 1rem;
 }
 
