@@ -10,15 +10,27 @@
   <body>
     <header class="header-container">
       <p class="header-container__logo">Will<span>I</span>am Raga</p>
-      <nav class="header-container__nav" id="nav">
-        <ul class="header-container__nav-list">
-          <li class="header-container__nav-list-item">Portfolio</li>
-          <li class="header-container__nav-list-item">About</li>
-          <li class="header-container__nav-list-item">Contact</li>
-          <li class="header-container__nav-list-item-burger">
-            <div class="burger-menu"></div>
-            <div class="burger-menu"></div>
-            <div class="burger-menu"></div>
+      <div
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        class="header-container__nav-list-item-burger burger mobile-nav-toggle"
+        role="navigation">
+        <div class="burger-menu rotate"></div>
+        <div class="burger-menu dissappear"></div>
+        <div class="burger-menu rotate1"></div>
+      </div>
+      <nav class="header-container__nav" id="primary-nav">
+        <ul
+          data-visible="false"
+          id="primary-navigation"
+          class="header-container__nav-list primary-navigation nav-links"
+        >
+          <li class="header-container__nav-list-item">
+            <a href="">Portfolio</a>
+          </li>
+          <li class="header-container__nav-list-item"><a href="">About</a></li>
+          <li class="header-container__nav-list-item">
+            <a href="">Contact</a>
           </li>
         </ul>
       </nav>
@@ -124,11 +136,28 @@
             </li>
           </ul>
           <!-- <i>Addd chevron down here</i> -->
-          <p>Chevron Down</p>
+          <a href="#Work" class="chevron-down"
+            ><svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 407.437 407.437"
+              xml:space="preserve"
+            >
+              <polygon
+                points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "
+              /></svg
+          ></a>
         </div>
       </section>
-      <section class="work-section">
+      <section id="work" class="work-section">
         <h2 class="work-section__heading">My Recent Works</h2>
+
+        <!-- Project 1 -->
+
         <div class="work-section__project-card">
           <!-- <img src="" alt="A picture of the first project" /> -->
           <svg
@@ -151,10 +180,145 @@
             <li class="work-section__project-card-language">Javascript</li>
             <li class="work-section__project-card-language">html</li>
           </ul>
-          <button type="button">See Project</button>
+          <a href="" class="work-section__btn">See Project</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="work-section__project-card">
+          <!-- <img src="" alt="A picture of the first project" /> -->
+          <svg
+            width="100%"
+            height="200px"
+            viewBox="0 0 100% auto"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <rect width="100%" height="100%" fill="#C1C7D0" />
+            </g>
+          </svg>
+          <h3 class="work-section__project-card-title">
+            Multi-Post Stories Gain+Glory
+          </h3>
+          <ul class="work-section__project-card-languages-list">
+            <li class="work-section__project-card-language">Ruby on rails</li>
+            <li class="work-section__project-card-language">css</li>
+            <li class="work-section__project-card-language">Javascript</li>
+            <li class="work-section__project-card-language">html</li>
+          </ul>
+          <a href="" class="work-section__btn">See Project</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="work-section__project-card">
+          <!-- <img src="" alt="A picture of the first project" /> -->
+          <svg
+            width="100%"
+            height="200px"
+            viewBox="0 0 100% auto"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <rect width="100%" height="100%" fill="#C1C7D0" />
+            </g>
+          </svg>
+          <h3 class="work-section__project-card-title">
+            Multi-Post Stories Gain+Glory
+          </h3>
+          <ul class="work-section__project-card-languages-list">
+            <li class="work-section__project-card-language">Ruby on rails</li>
+            <li class="work-section__project-card-language">css</li>
+            <li class="work-section__project-card-language">Javascript</li>
+            <li class="work-section__project-card-language">html</li>
+          </ul>
+          <a href="" class="work-section__btn">See Project</a>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="work-section__project-card">
+          <!-- <img src="" alt="A picture of the first project" /> -->
+          <svg
+            width="100%"
+            height="200px"
+            viewBox="0 0 100% auto"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <rect width="100%" height="100%" fill="#C1C7D0" />
+            </g>
+          </svg>
+          <h3 class="work-section__project-card-title">
+            Multi-Post Stories Gain+Glory
+          </h3>
+          <ul class="work-section__project-card-languages-list">
+            <li class="work-section__project-card-language">Ruby on rails</li>
+            <li class="work-section__project-card-language">css</li>
+            <li class="work-section__project-card-language">Javascript</li>
+            <li class="work-section__project-card-language">html</li>
+          </ul>
+          <a href="" class="work-section__btn">See Project</a>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="work-section__project-card">
+          <!-- <img src="" alt="A picture of the first project" /> -->
+          <svg
+            width="100%"
+            height="200px"
+            viewBox="0 0 100% auto"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <rect width="100%" height="100%" fill="#C1C7D0" />
+            </g>
+          </svg>
+          <h3 class="work-section__project-card-title">
+            Multi-Post Stories Gain+Glory
+          </h3>
+          <ul class="work-section__project-card-languages-list">
+            <li class="work-section__project-card-language">Ruby on rails</li>
+            <li class="work-section__project-card-language">css</li>
+            <li class="work-section__project-card-language">Javascript</li>
+            <li class="work-section__project-card-language">html</li>
+          </ul>
+          <a href="" class="work-section__btn">See Project</a>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="work-section__project-card">
+          <!-- <img src="" alt="A picture of the first project" /> -->
+          <svg
+            width="100%"
+            height="200px"
+            viewBox="0 0 100% auto"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g>
+              <rect width="100%" height="100%" fill="#C1C7D0" />
+            </g>
+          </svg>
+          <h3 class="work-section__project-card-title">
+            Multi-Post Stories Gain+Glory
+          </h3>
+          <ul class="work-section__project-card-languages-list">
+            <li class="work-section__project-card-language nav-link">
+              Ruby on rails
+            </li>
+            <li class="work-section__project-card-language nav-link">css</li>
+            <li class="work-section__project-card-language nav-link">
+              Javascript
+            </li>
+            <li class="work-section__project-card-language nav-link">html</li>
+          </ul>
+          <a href="" class="work-section__btn">See Project</a>
         </div>
       </section>
     </main>
     <footer></footer>
+    <script src="app.js"></script>
   </body>
 </html>
