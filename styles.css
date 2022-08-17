@@ -164,6 +164,7 @@ body {
   display: flex;
   list-style: none;
   justify-content: center;
+  align-items: center;
   padding-bottom: 11em;
 }
 
@@ -187,6 +188,7 @@ body {
   width: 30px;
 }
 
+/* Work section */
 .work-section {
   padding: 3em 2.2rem 0 2.6rem;
   text-align: center;
@@ -251,16 +253,206 @@ svg g {
   padding: 1em 1em;
 }
 
+/* About section */
+.about-container {
+  text-align: center;
+  padding: 5em 0;
+  width: 80%;
+  margin: auto;
+}
+
+.about-container__heading {
+  font-size: 3em;
+  color: #172b4d;
+  padding-bottom: 1em;
+  font-weight: 700;
+  line-height: 5.2rem;
+}
+
+.about-container__desc {
+  font-size: 2em;
+  padding-bottom: 1.5em;
+  color: #42526e;
+  line-height: 3.2rem;
+}
+
+.about-section__btn {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: #36b376;
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 1em 1em;
+}
+
+/* Professional skills */
+.professional-skills {
+  display: grid;
+  gap: 2em;
+}
+
+.languages-container {
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  width: 80%;
+  margin: auto;
+  padding: 3em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.languages-container__heading {
+  color: #344563;
+  line-height: 3.2em;
+  font-weight: 600;
+  font-size: 2.4em;
+  text-align: center;
+}
+
+.languages-list {
+  width: 100%;
+  list-style: none;
+  font-size: 1.2em;
+  color: #36b37e;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill-item {
+  border: 1px solid none;
+  background-color: #fff;
+  padding: 0.5em;
+  border-radius: 8px;
+}
+
+.frameworks-container {
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  width: 80%;
+  margin: auto;
+  padding: 3em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frameworks-container__heading {
+  color: #344563;
+  line-height: 3.2em;
+  font-weight: 600;
+  font-size: 2.4em;
+  text-align: center;
+}
+
+.frameworks-list {
+  width: 100%;
+  list-style: none;
+  font-size: 1.2em;
+  color: #36b37e;
+  display: flex;
+  justify-content: space-around;
+}
+
+.skills-container {
+  background-color: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  width: 80%;
+  margin: auto;
+  padding: 3em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-container__heading {
+  color: #344563;
+  line-height: 3.2em;
+  font-weight: 600;
+  font-size: 2.4em;
+  text-align: center;
+}
+
+.skills-list {
+  width: 100%;
+  list-style: none;
+  font-size: 1.2em;
+  color: #36b37e;
+  display: flex;
+  justify-content: space-around;
+}
+
+.additional-info {
+  padding: 2em 0.5em;
+  color: #172b4d;
+  font-size: 4em;
+  line-height: 5.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Contact Form */
+.form {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  gap: 1em;
+}
+
+.input-cls {
+  padding: 1em;
+}
+
+.submit-btn {
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #fff;
+  width: max-content;
+  margin: 1em auto;
+  background-color: #36b376;
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 1em 1em;
+}
+
+.footer {
+  padding: 3em 2em;
+}
+
+.footer-container__social-icons-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  font-size: 2em;
+  text-align: center;
+}
+
+.email-link {
+  text-decoration: none;
+  color: #42526e;
+}
+
 @media (min-width: 768px) {
   .header-container__logo {
     display: none;
   }
 
   .header-container__nav {
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+    display: none;
   }
 
   .primary-navigation {
@@ -274,5 +466,20 @@ svg g {
 
   .header-container__nav-list-item-burger {
     display: none;
+  }
+
+  .work-section {
+    padding: 2em 5em;
+  }
+
+  .project-cards__container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1em;
+  }
+
+  .professional-skills {
+    width: 40%;
+    margin: auto;
   }
 }
